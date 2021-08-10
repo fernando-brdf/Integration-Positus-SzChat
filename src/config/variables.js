@@ -2,7 +2,7 @@ if (process.env.NODE_ENV !== 'production') require('dotenv/config')
 
 
 const variables = {
-    port: process.env.PORT,
+    port: process.env.PORT || 8080,
     api_positus_authorization: process.env.API_POSITUS_AUTHORIZATION,
     api_positus_host: process.env.API_POSITUS_HOST,
     api_positus_key_number: process.env.API_POSITUS_KEY_NUMBER,
